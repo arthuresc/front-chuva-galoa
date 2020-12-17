@@ -1,0 +1,82 @@
+:root{
+    --max-w-size-page: 1366px;
+    --color-light:#FDF1EB;
+    --color-default:#ED7839;
+    --color-txt-orange-dark: #725C5C;
+    --color-txt-dark: #5c5c5c;
+    --color-white:#fff;
+    --gradient-default:180deg, #FFB354 0%, #EE7A3A 100%;
+    --font-fam-roboto:'Roboto', 'Segoe UI', sans-serif;
+    --font-fam-quick:'Quicksand', 'Segoe UI', sans-serif;
+    --font-fam-segoe:'Segoe UI', sans-serif;
+    --font-size-txt-small: 12px;
+    --font-size-txt-default: 14px;
+    --font-size-menu: 15px;
+    --font-size-title: 24px;
+    --font-size-title-info: 30px;
+    --font-size-subtitle-info: 20px;    
+    --color-test-1: blue;
+    --color-test-2: red;
+    --color-test-3: green;
+    --color-test-4: yellow;
+}
+
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: var(--font-fam-quick);
+    font-weight: 400;
+    overflow: auto;
+    /* max-width: var(--max-w-size-page); */
+}
+body{
+    background-color: var(--color-white);
+    width: 100%;
+}
+/* Configuração da Pagina */
+.page-wrap{
+    max-width: var(--max-w-size-page);
+    margin: 0 auto;
+    position: relative; /* talvez retirar */
+}
+.page{
+    display: flex;
+    flex-direction: row;
+}
+/* Configuração do Side Menu */
+.side-menu{
+    flex: 2 5 220px;
+    overflow: hidden;
+    /* background-color: var(--color-test-1); */
+}
+
+.nav{
+    position: fixed;
+    overflow: hidden;
+    max-width: 220px;
+}
+
+/* Configuração do Conteudo da Pagina */
+
+main{
+    flex: 2 4 1146px;
+}
+
+/* Configuração dos titulos, header */
+
+.header{
+    padding: 0.25em 2.25em;
+    background-color: var(--color-light);
+}
+
+/* Configuração Conteudo --- */ 
+
+.colorT3{
+    background-color: var(--color-test-3);
+}
+.colorT4{
+    background-color: var(--color-test-4);
+    height: 300vh;
+}

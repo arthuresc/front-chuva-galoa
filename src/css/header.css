@@ -1,0 +1,106 @@
+:root{
+    --font-roboto-14-400: normal 400 14px/17px var(--font-fam-roboto), sans-serif;
+    --font-roboto-22-400: normal 400 22px/26px var(--font-fam-roboto), sans-serif;
+    --font-roboto-10-700: normal 700 10px/12px var(--font-fam-roboto), sans-serif;
+    --font-quicksand-14-400-34: normal 400 14px/34px var(--font-fam-quick), sans-serif;
+    --font-quicksand-14-400: normal 400 14px/18px var(--font-fam-quick), sans-serif;
+    --font-quicksand-12-400: normal 400 12px/15px var(--font-fam-quick), sans-serif;
+    --font-fam-roboto:'Roboto', 'Segoe UI', sans-serif;
+    --font-fam-quick:'Quicksand', 'Segoe UI', sans-serif;
+    --font-fam-segoe:'Segoe UI', sans-serif;
+    --color-light:#FDF1EB;
+    --color-default:#ED7839;
+    --color-txt-orange-dark: #725C5C;
+    --color-txt-dark: #5c5c5c;
+    --color-white:#fff;
+}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+/* Controle de Fontes */
+.sub-title{
+    font: var(--font-roboto-14-400);
+    color: var(--color-txt-orange-dark);
+}
+.title{
+    font: var(--font-roboto-22-400);
+    color: var(--color-txt-orange-dark);
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#lang{
+    width: 97px;
+    height: 34px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #CCC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font: var(--font-quicksand-14-400-34);
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+}
+.lang-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#globo-lang{
+    width: 15px;
+    height: 15px;
+}
+#arrow-lang{
+    width: 8px;
+    height: 8px;
+}
+.hide{
+    display: none;
+}
+.lang-list{
+    position: relative;
+    bottom: 1px;
+    width: 97px;
+    height: 70px;
+    box-sizing: border-box;
+    border-radius: 0 0 3px 3px;
+    border: 1px solid #CCC;
+    border-top: none;
+    font: var(--font-quicksand-14-400-34);
+    color: #333;
+    background-color: var(--color-light);
+    text-align: center;
+    cursor: pointer;
+}
+.lang-value:hover{
+    color: var(--color-light);
+    background-color: var(--color-txt-orange-dark);
+}
+.user-profile{
+    position: relative;
+}
+.user-profile-photo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.user-txt{
+
+}
+.notify{
+    position: absolute;
+    font: var(--font-roboto-10-700);
+    color: var(--color-white);
+    background-color: rgb(207, 58, 58);
+    min-width: 12px;
+    min-height: 12px;
+    text-align: center;
+    border-radius: 50%;
+    right: -5px;
+    top: -5px;
+}

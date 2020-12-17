@@ -1,0 +1,55 @@
+/* Configuração do Side Menu */
+:root{
+    --font-quick-15-500: normal 500 15px/20px var(--font-fam-quick), sans-serif;
+    --font-roboto-30-700: normal 700 30px/68px var(--font-fam-roboto), sans-serif;
+    --font-fam-roboto:'Roboto', 'Segoe UI', sans-serif;
+    --font-fam-quick:'Quicksand', 'Segoe UI', sans-serif;
+    --font-fam-segoe:'Segoe UI', sans-serif;
+    --color-light:#FDF1EB;
+    --color-default:#ED7839;
+    --color-txt-orange-dark: #725C5C;
+    --color-gray: #e7e7e7;
+    --color-txt-dark: #5c5c5c;
+    --gradient-default:180deg, #FFB354 0%, #EE7A3A 100%;
+    --color-white:#fff;
+}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+.list > li{
+    width: 220px;
+    border-bottom: 2px solid var(--color-gray);
+}
+
+.text-nav{
+    flex: 1 2 220px;
+    font: var(--font-quick-15-500);
+    color: var(--color-txt-orange-dark);
+    padding: 7px 24px;
+    position: relative;
+    text-decoration: none;
+}
+
+.text-nav:active{
+    border-bottom: 2px solid var(--color-gray)!important;
+    position: relative;
+    background-color: var(--color-light);
+    border-image: linear-gradient(to bottom, orange, orangered) 0 90%;
+    border-style: solid;
+    border-width: 3px;
+    padding: 5.5px 20px 5.5px 20px;
+    border-right: none;
+}
+
+
+.title-side{
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(var(--gradient-default));
+    font: var(--font-roboto-30-700);
+    color: var(--color-white);
+}
+.img-side{
+    max-width: 220px;
+    height: auto;
+}
+

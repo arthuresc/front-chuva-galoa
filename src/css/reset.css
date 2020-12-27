@@ -28,5 +28,9 @@ select, option{
 	border: none;
 	border-color: none;
 }
+button, button:focus, button:active, button:default{
+	box-shadow: none;
+	text-shadow: none;
+}
 
 /* Configurações de reset baseadas no arquivo aberto do meyerweb.com */

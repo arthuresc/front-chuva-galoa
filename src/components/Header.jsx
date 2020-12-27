@@ -4,12 +4,13 @@ import '../css/reset.css'
 import global from '../img/global.svg'
 import arrow from '../img/sort-down.svg'
 import person from '../img/person.webp'
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 
-export default function () {
+export default function Header (props) {
   const [langList, setLangList] = useState('hide');
-  const [notifies, setNotifies] = useState(0);
+  // const [notifies, setNotifies] = useState(0);
+  const notifies = 2;
 
   function showLangs() {
     if (langList === 'hide') {
@@ -18,8 +19,7 @@ export default function () {
       setLangList('hide')
     }
   }
-
-
+  
   return (
     <header className="header">
       <div id="titles">
@@ -35,7 +35,7 @@ export default function () {
         <div className="lang-btn" onClick={showLangs}>
           <img src={global} alt="Globo" id="globo-lang" />
           <p className="" id="lang-title">PT-BR</p>
-          <img src={arrow} alt="Globo" id="arrow-lang" />
+          <img src={arrow} alt="Down Arrow Options" id="arrow-lang" />
         </div>
         <div className={langList}>
           <p className="lang-value">PT-BR</p>
@@ -49,11 +49,13 @@ export default function () {
         */}
       </div>
       <div className="user-profile">
-        <p className="user-txt">Bem vindo!</p>
-        <p className="user-txt">alguem12@galoascience.com</p>
+        <div className="greetings-wrap">
+          <p className="user-txt" id="greeting">Bem vindo!</p>
+          <p className="user-txt" id="email">alguem12@galoascience.com</p>
+        </div>
         <div className="user-wrap">
           <p className="notify">{notifies}</p>
-          <img src={person} alt="user profile photo" srcset="" className="user-profile-photo" />
+          <img src={person} alt="User Profile" srcset="" className="user-profile-photo" />
         </div>
       </div>
     </header>

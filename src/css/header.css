@@ -82,16 +82,22 @@
     background-color: var(--color-txt-orange-dark);
 }
 .user-profile{
+    display: flex;
+    flex-direction: row;
     position: relative;
+    align-items: center;
+    justify-content: space-between;
 }
 .user-profile-photo{
     width: 30px;
     height: 30px;
     border-radius: 50%;
-}
-.user-txt{
 
 }
+.greetings-wrap{
+    margin-right: 15px;
+}
+
 .notify{
     position: absolute;
     font: var(--font-roboto-10-700);
@@ -103,4 +109,10 @@
     border-radius: 50%;
     right: -5px;
     top: -5px;
+}
+#greeting{
+    font: var(--font-quicksand-14-400);
+}
+#email{
+    font: var(--font-quicksand-12-400);
 }

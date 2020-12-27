@@ -72,10 +72,6 @@ main{
 }
 
 /* Configuração Conteudo --- */ 
-
-.colorT3{
-    background-color: var(--color-test-3);
-}
 .colorT4{
     background-color: var(--color-test-4);
     height: 300vh;
